@@ -1387,12 +1387,10 @@ return $query['i_num_items'];
 }
 */?>
 
-<?php /*
 function cust_count_category_listings($cat) {
   $query = Category::newInstance()->findByPrimaryKey($cat);
 return $query['i_num_items'];
 }
-*/ ?>
 
 <?php /*
 function kyr_db_query($i){

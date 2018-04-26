@@ -46,7 +46,6 @@
 //echo 'cust_show_only_selected_categories'();
 ?>
 
-<?php /*
 <h1 class="title">Δωρεάν κατηγορίες για πάντα..</h1>
 
 <?php // kyr 3 main categories on top
@@ -95,7 +94,6 @@ $cat_3_name="Πωλήσεις";
 <?php }
 // kyr END
 ?>
-*/ ?>
 
 <h1 class="title">
   <?php _e('Premium Listings',OSCLASSWIZARDS_THEME_FOLDER);?>
