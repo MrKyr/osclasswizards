@@ -6,4 +6,8 @@
 
 ### Ola Santorini
 
-
+- Custom banners with links  
+- Remove Region and City from posts  
+- Add Lat/Lon for posts  
+- Remove subcategories from search  
+- Fix search result "yamaha" wile search for "yam"
