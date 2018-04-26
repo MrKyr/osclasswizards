@@ -1267,29 +1267,6 @@ function cust_parent_categories_select($name = 'sCategory', $category = null, $d
 }
 ?>
 
-<?php //kyr
-function cust_show_only_selected_categories() {
-        $categoriesToShow = array(102, 2, 3, 5, 6, 7); // Put here Id's of parent categories or subcategories (no sub-subcategories)
-    
-        $categories = Category::newInstance()->toTree();
-        foreach ($categories as $key => $cat) {
-            if (!in_array($cat['pk_i_id'], $categoriesToShow)) {
-                foreach ($cat['categories'] as $key2 => $subcat) {
-                    if(!in_array($subcat['pk_i_id'], $categoriesToShow)) {
-                        unset($categories[$key]['categories'][$key2]);
-                    }
-    
-                if (!$categories[$key]['categories']) unset($categories[$key]);
-            }
-        }
-    
-        View::newInstance()->_exportVariableToView('categories', $categories);
-    }
-}
-
-//osc_add_hook('before_html', 'cust_show_only_selected_categories');
-?>
-
 <?php //kyr display result "yamaha" wile search for "yam"
 function cust_search_keyword_wildcard_with_username($params) {
 
@@ -1379,28 +1356,3 @@ mysql_close($con);
         return $vysledek;
 }
 /* KYR END CAROUSEL CODE */ ?>
-
-<?php /* kyr count how manylistings a category has usage: echo cust_count_category_listings(#); where # is the category id /
-function cust_count_category_listings($cat) {
-  $query = Category::newInstance()->findByPrimaryKey($cat);
-return $query['i_num_items'];
-}
-*/?>
-
-<?php /*
-function cust_count_category_listings($cat) {
-  $query = Category::newInstance()->findByPrimaryKey($cat);
-return $query['i_num_items'];
-}
-*/ ?>
-
-<?php /*
-function kyr_db_query($i){
-$dao = new DAO();
-$result = $dao->dao->query("select * from oc_t_category_description where fk_i_category_id = '77'");
-$item = $result->result();
-$item = $result->row();
-//var_dump($item); // an array with all the fields in table t_item for ad #48
-echo $item[$i];
-}
-*/ ?>

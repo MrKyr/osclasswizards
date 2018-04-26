@@ -79,7 +79,6 @@
         <?php } ?>
       </ul>
       <?php
-//kyr comment out            echo '<div class="copyright">' . sprintf(__('Free responsive Osclass theme by <a target="_blank" title="osclasswizards" href="%s">OsclassWizards</a>',OSCLASSWIZARDS_THEME_FOLDER), 'http://www.osclasswizards.com/') . '</div>';
             /* kyr copyright footer message*/
             echo '<div class="copyright">' . sprintf(__('Copyright © 2018 Digital Vision Ltd. <a target="_blank" title="" href="%s"></a>',OSCLASSWIZARDS_THEME_FOLDER), '') . '</div>';
         ?>

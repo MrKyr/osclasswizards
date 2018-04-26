@@ -27,42 +27,6 @@
 
 <body <?php osclasswizards_body_class(); ?>>
 
-<!-- kyr START fixed top bar and search bar while scrolling --
-<style>
-#header .banner_none.sticky {
-    position:fixed;
-    top:93px;
-    z-index:99999;
-    width: 100%;
-}
-
-#header .main_header.sticky {
-    position:fixed;
-    top:0;
-    z-index:99999;
-    width: 100%;
-}
-</style>
-
-<script>
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 39) {
-        $('#main_header').addClass('sticky');
-    } else {
-        $('#main_header').removeClass('sticky');
-    }
-});
-
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 600) {
-        $('#form_vh_map').addClass('sticky');
-    } else {
-        $('#form_vh_map').removeClass('sticky');
-    }
-});
-</script>
-<!-- kyr END -->
-
 <header id="header">
   <div class="top_links">
     <div class="container">
@@ -254,10 +218,3 @@ function carousel() {
 </script>
 <?php }
 /* KYR END OF CAROUSEL CODE */ ?>
-
-
-<?php /* KYR START des sto 'functions.php' custom database queries ==-- ?>
-<pre>
-<?php kyr_db_query(s_name); ?>
-</pre>
-<?php /* KYR END */ ?>

@@ -42,61 +42,6 @@
 
 ?>
 
-<?php // kyr Display custom selected categories see functions.php
-//echo 'cust_show_only_selected_categories'();
-?>
-
-<?php /*
-<h1 class="title">Δωρεάν κατηγορίες για πάντα..</h1>
-
-<?php // kyr 3 main categories on top
-// kyr Variables
-$cat_1_id="8";
-$cat_1_name="Βρες δουλειά";
-$cat_2_id="122";
-$cat_2_name="Βρες υπάλληλο";
-$cat_3_id="1";
-$cat_3_name="Πωλήσεις";
-
-{ ?>
-<div class="row">
-
-<ul class="col-sm-6 col-md-4 grid_list">
-<li>
- <section class="listings">
-    <h2><i class="fa fa-shopping-cart"></i> 
-        <a class="category %cf%8e" href="http://olanaxos.gr/ola/index.php?page=search&sCategory=<?php echo $cat_1_id ?>"><?php echo $cat_1_name ?></a> <span><?php echo cust_count_category_listings($cat_1_id); ?></span>
-    </h2>
- </section>
-</li>
-</ul>
-
-<ul class="col-sm-6 col-md-4 grid_list">
-<li>
- <section class="listings">
-    <h2><i class="fa fa-shopping-cart"></i> 
-        <a class="category %cf%8e1" href="http://olanaxos.gr/ola/index.php?page=search&sCategory=<?php echo $cat_2_id ?>"><?php echo $cat_2_name ?></a> <span><?php echo cust_count_category_listings($cat_2_id); ?></span>
-    </h2>
- </section>
-</li>
-</ul>
-
-<ul class="col-sm-6 col-md-4 grid_list">
-<li>
- <section class="listings">
-    <h2><i class="fa fa-shopping-cart"></i> 
-        <a class="category %cf%8e2" href="http://olanaxos.gr/ola/index.php?page=search&sCategory=<?php echo $cat_3_id ?>"><?php echo $cat_3_name ?></a> <span><?php echo cust_count_category_listings($cat_3_id); ?></span>
-    </h2>
- </section>
-</li>
-</ul>
-
-</div>
-<?php }
-// kyr END
-?>
-*/ ?>
-
 <h1 class="title">
   <?php _e('Premium Listings',OSCLASSWIZARDS_THEME_FOLDER);?>
 </h1>
