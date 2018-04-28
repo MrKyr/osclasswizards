@@ -311,9 +311,9 @@ DEFINES
       <?php while ( osc_has_subcategories() ) { if( $m<=(osc_get_preference('sub_cat_limit', 'osclasswizards_theme'))){?>
       <li>
         <?php if( osc_category_total_items() > 0 ) { ?>
-        <a class="category sub-category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span>
+        <a class="category sub-category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <!-- kyr hide subcategory count <span>(<?php echo osc_category_total_items() ; ?>)</span> -->
         <?php } else { ?>
-        <a class="category sub-category <?php echo osc_category_slug() ; ?>" href="#"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span>
+        <a class="category sub-category <?php echo osc_category_slug() ; ?>" href="#"><?php echo osc_category_name() ; ?></a> <!-- kyr hide subcategory count <span>(<?php echo osc_category_total_items() ; ?>)</span> -->
         <?php } ?>
       </li>
       <?php } $m++; } if($m>(osc_get_preference('sub_cat_limit', 'osclasswizards_theme'))+1) {?>
