@@ -296,7 +296,9 @@ DEFINES
 			$_slug      = osc_category_slug();
 			$_url       = osc_search_category_url();
 			$_name      = osc_category_name();
+/* kyr START remove total items count from category /
 			$_total_items = osc_category_total_items();
+/* kyr END */
 			if ( osc_count_subcategories() > 0 ) { ?>
 
       <?php } ?>
