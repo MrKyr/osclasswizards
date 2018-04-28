@@ -296,16 +296,14 @@ DEFINES
 			$_slug      = osc_category_slug();
 			$_url       = osc_search_category_url();
 			$_name      = osc_category_name();
-/* kyr START remove total items count from category /
 			$_total_items = osc_category_total_items();
-/* kyr END */
 			if ( osc_count_subcategories() > 0 ) { ?>
 
       <?php } ?>
       <?php if($_total_items > 0) { ?>
-      <a class="category <?php echo $_slug; ?>" href="<?php echo $_url; ?>"><?php echo $_name ; ?></a> <span><?php echo $_total_items ; ?></span>
+      <a class="category <?php echo $_slug; ?>" href="<?php echo $_url; ?>"><?php echo $_name ; ?></a> <!-- kyr hide category count <span><?php echo $_total_items ; ?></span>-->
       <?php } else { ?>
-      <a class="category <?php echo $_slug; ?>" href="#"><?php echo $_name ; ?></a> <span><?php echo $_total_items ; ?></span>
+      <a class="category <?php echo $_slug; ?>" href="#"><?php echo $_name ; ?></a> <!--kyr hide category count <span><?php echo $_total_items ; ?></span>-->
       <?php } ?>
     </h2>
     <?php if ( osc_count_subcategories() > 0 ) { $m=1; ?>
